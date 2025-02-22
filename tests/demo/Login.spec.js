@@ -31,7 +31,7 @@ test('BlankEmail', async ({ page }) => {
 test('BlankPassword', async ({ page }) => {
 
   const Login = new LoginPage(page)
-  await Login.gotoLoginPage()
+  await Login.gotoLoginPage() 
   await Login.login('Yohani@outlool.com','')
   await expect(page.getByText('This is a required field')).toBeVisible()
  
